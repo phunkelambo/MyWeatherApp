@@ -1,0 +1,6 @@
+{
+    "kconfig.python": "downloads",
+    "files.autoSave": "onWindowChange",
+    "editor.wordWrap": "on",
+    "ide.projectAutoSort": true
+}

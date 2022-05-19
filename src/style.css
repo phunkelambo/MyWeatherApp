@@ -1,0 +1,142 @@
+body {
+    font-family: arial, sans-serif;
+  }
+  
+  h1 {
+    color: #878787;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-block-end: 0;
+  }
+  
+  
+  ul {
+  margin: 0 0 10px;
+  padding: 0;
+  display: inline;
+  list-style: none;
+  }
+  
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 19px;
+  }
+  
+  li:first-letter {
+    text-transform: capitalize;
+  }
+  
+  .appWrapper {
+    max-inline-size: 600px;
+    margin: 30px auto;
+  }
+  
+  .weatherApp {
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  
+  #cityName {
+      font-size: 40px;
+      font-weight: bold;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5 {
+  inline-size: 5%;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 2px 2px 5px;
+  border-radius: 5px;
+  line-height: 0.1px;
+  position: static;
+  box-sizing: border-box;
+  margin-block-start: 20px;
+  text-align: center;
+  max-inline-size: 100%;
+  }
+
+
+  .col1,
+  .col2,
+  .col3 {
+    inline-size: 30%;
+    line-height: 0.5;
+    font-size: 15px;
+    padding: 5px 2px 2px 5px;
+    font-weight: bold;
+    position: static;
+    box-sizing: border-box;
+    line-height: 10px;
+    text-align: center;
+}
+
+  .overview {
+    margin-block-end: 20%;
+    writing-mode: horizontal-tb;
+    display: inline;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  #icon {
+    margin-block-end: 8%;
+    writing-mode: horizontal-tb;
+    margin-inline-end: 1px;
+    block-size: 100px;
+    inline-size: 150px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .forecast {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    line-height: none;
+    font-weight: bold;
+    margin-block-start: 0px;
+    margin-inline-start: 20px;
+    writing-mode: horizontal-tb;
+  }
+  
+ {
+    border: 2px solid #00A4BD;
+    padding: 10px;
+    box-shadow: 6px 4px #00A4BD;
+  }
+  #tempC {
+    font-size: 25px;
+  }
+  
+  #tempf {
+    font-size: 25px;
+  }
+
+  #temperature {
+    font-size: 64px;
+    line-height: 1;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+
+  .footer {
+    margin-inline-start: 20px;
+    writing-mode: horizontal-tb;
+  }
+
+  
+  
+  
