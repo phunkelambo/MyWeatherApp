@@ -2,141 +2,176 @@ body {
     font-family: arial, sans-serif;
   }
   
-  h1 {
-    color: #878787;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 28px;
-    margin-block-end: 0;
+  .container {
+    background-image: radial-gradient(circle farthest-corner at 22.4% 21.7%, rgb(224, 187, 241) 0%, #561972da 100.2%);
+    max-inline-size: 560px;
+    margin: 10px auto;
   }
   
-  
-  ul {
-  margin: 0 0 10px;
-  padding: 0;
-  display: inline;
-  list-style: none;
-  }
-  
-  li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 19px;
-  }
-  
-  li:first-letter {
-    text-transform: capitalize;
-  }
-  
-  .appWrapper {
-    max-inline-size: 600px;
-    margin: 30px auto;
-  }
-  
-  .weatherApp {
-    padding: 20px;
-    border-radius: 5px;
-  }
-
   
   #cityName {
-      font-size: 40px;
+      font-size: 32px;
       font-weight: bold;
+      display: block;
+      text-align: center;
   }
 
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5 {
-  inline-size: 5%;
-  text-align: center;
-  font-size: 15px;
-  padding: 5px 2px 2px 5px;
-  border-radius: 5px;
-  line-height: 0.1px;
-  position: static;
-  box-sizing: border-box;
-  margin-block-start: 20px;
-  text-align: center;
-  max-inline-size: 100%;
-  }
-
-
-  .col1,
-  .col2,
-  .col3 {
-    inline-size: 30%;
-    line-height: 0.5;
-    font-size: 15px;
-    padding: 5px 2px 2px 5px;
-    font-weight: bold;
-    position: static;
-    box-sizing: border-box;
-    line-height: 10px;
-    text-align: center;
-}
-
+  
   .overview {
-    margin-block-end: 20%;
+    margin-block-end: 5%;
     writing-mode: horizontal-tb;
     display: inline;
     text-align: center;
     line-height: 2;
-  }
-  
-  #icon {
-    margin-block-end: 8%;
-    writing-mode: horizontal-tb;
-    margin-inline-end: 1px;
-    block-size: 100px;
-    inline-size: 150px;
-    text-align: center;
-    display: inline-block;
-  }
-  
-  .forecast {
-    list-style-type: none;
-    text-align: center;
-    display: inline-block;
-    font-size: 10px;
-    line-height: none;
-    font-weight: bold;
-    margin-block-start: 0px;
-    margin-inline-start: 20px;
-    writing-mode: horizontal-tb;
-  }
-  
- {
-    border: 2px solid #00A4BD;
-    padding: 10px;
-    box-shadow: 6px 4px #00A4BD;
-  }
-  #tempC {
-    font-size: 25px;
-  }
-  
-  #tempf {
-    font-size: 25px;
+    padding-top: 2px;
+    margin: 0;
   }
 
-  #temperature {
+  .currentTemp {
+    font-size: 100px;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: 300px;
+    color: rgb(42, 42, 42);
+    
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+    padding: 1em;
+    margin: 0px;
+  }
+  
+  
+  .border {
+    border: 10%;
+    border-block-color: grey;
+  }
+  
+  .btn-primary {
+    color: whitesmoke;
+    background-color: white;
+  }
+  
+  .units {
+    position: relative;
+    font-size: 16px;
+    inset-block-start: -34px;
+  }
+
+
+  .active {
+    cursor: default;
+  }
+
+  .active:hover {
+    text-decoration: none;
+  }
+  
+  .searchForm {
+    font-size: 13px;
+    padding: 5px 30px 10px;
+    background-color: #cca8e9;
+    border-color: #cca8e9;
+    color: white;
+  }
+  
+  .searchForm:hover {
+    font-size: 13px;
+    padding: 7px 15px;
+    background-color: #cbc9f5;
+    border-color: #cbc9f5;
+  }
+  
+  #tempC, 
+  #tempf {
+  font-size: 18px;
+  font-weight: 300;
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  inset-block-start: 10px;
+}
+
+#tempC:hover,
+#tempf:hover {
+  font-size: 22px;
+  color: black;
+}
+
+.currentDisplay {
+  margin-top: -20px;
+}
+
+#description {
+  font-size: 14px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.rowDetails {
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+}
+
+#temperature {
     font-size: 64px;
     line-height: 1;
     font-weight: bold;
-    margin: 0;
-    padding-left: 0;
+    padding-inline-start: 0px;
   }
   
+  #windIcon,
+  #humidityIcon {
+    max-inline-size: 45px;
+  }
+  
+  .descriptionIcon {
+    margin: 0 auto;
+  }
+  
+  #icon {
+    max-width: 160px;
+    margin-top: -40px;
+  }
 
   .footer {
     margin-inline-start: 20px;
     writing-mode: horizontal-tb;
   }
 
+  .weatherTemperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+  }
   
+  .weatherTemperature .active:hover {
+    text-decoration: none;
+  }
+  
+  .weatherForecast {
+    margin-block-start: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .weatherForecastDate {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+  
+  .weatherForecastTemperature-min {
+    opacity: 0.5;
+  }
+  
+  .weatherForecastTemperatures {
+    font-size: 20px;
+  }
   
   

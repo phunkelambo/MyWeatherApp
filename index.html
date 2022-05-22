@@ -18,96 +18,66 @@
 </head>
 <body>
   <div class="container">
-    <div class="appWrapper">
-      <div class="weatherApp">
-        <form id="searchForm" class="mb-3">
-          <div class="row">
-            <div class="col-9">
-                <input 
-                type="search" 
-                placeholder="Enter city here..."
-                id="searchForm"
-                class="searchField" 
-                autocomplete="off"
-                />
-              </div>
-              <div class="col">
-                <button type="submit">
-                  <img src="images/search.png">
-                </button>
-              </div>
+    <form id="searchForm" class="mb-3">
+      <div class="row">
+      <div class="col-10">
+        <input 
+          type="search" 
+          placeholder="Enter city here..."
+          id="searchForm"
+          class="form-control shadow-sm border-1"
+          autocomplete="off"
+          autofocus="on"
+          />
+          </div>
+      <div class="col-2">
+         <button 
+          type="image" 
+          class="btn btn-primary w-200">
+          <img src="images/search.png">
+          </button>
+        </div>
+      </div>
+    </form>
+        <div class="overview">   
+            <p id="date">Saturday 26 March, 2022
+            <span id="time"> | 6:42p.m.</span></p>
+            <div id="cityName">New York</div> 
+        </div>
+
+      <div class="col">
+        <div class="currentTemp">
+          <span class="units" id="temperature"></span> 
+            <a href="#" id="tempC" class="active">°C</a> 
+            <a href="#" id="tempf">| °F</a>  
+        </div>
+      <div class="col">
+      <div class="currentDisplay">
+        <span id="description"></span>
+          </div>
+        </div>    
+      </div>
+      <div class="rowDetails">
+        <div class="col">
+          <img src="images/wind1.png" id="windIcon" />
+            <div id="wind"> m/h</div>
+        </div>
+          <div class="col">
+            <img src="images/humidity1.png" id="humidityIcon"/>
+            <div class="humidity"> %</div>
+          </div>
+        <div class="descriptionIcon">
+          <img class="image" id="icon" src="images/clouds.png" alt="clouds" />
             </div>
-                    </form>
-                    <div class="overview">
-                    <div class="row">
-                      <div class="col">
-                          <img src="images/cloudl.png" alt="Clear" id="icon" width="900" />
-                      </div>
-                      <div class="float-left" id="temperature">16 </div>
-                        <span id="tempC">°C |</span><span id="tempf"> °F</span>
-                      </div>
-                    </div>
-                    <div class="overview">
-                        <h1 id="cityName">New York</h1>
-                    
-                  <p id="date">Saturday 26 March, 2022 |
-                          <span id="time">6:42p.m.</span></p>
-                      </div>
-                      
-                      
-                      <div class="row row-cols-auto">
-                          <div class="col1">%</div>
-                          <div class="col2">m/s</div>
-                          <div class="col3">m/s</div>
-                    
-                    </div>
-                      <div class="row row-cols-auto">
-                        <div class="col1"><img src="images/humidity.png" alt="sun"></div>
-                        <div class="col2"><img src="images/windy.png" alt="sun"></div>
-                        <div class="col3"><img src="images/cloudn.png" alt="sun" width="50"></div>
-                     </div>
+      </div>
+        <div class="weatherForecast" id="forecast"></div>
+            </div>
+  </div>
 
-                      <div class="row row-cols-auto" id="forecast">
-                          <div class="col1" id="humidity">Humidity </div>
-                          <div class="col2">Wind </div>
-                          <div class="col3">Precipitation </div>
-                      </div>
-
-                      <div class="rowWrapper">
-                       <div class="row row-cols-auto">
-                        <div class="col-1"><strong>Mon</strong></div>
-                        <div class="col-2"><strong>Tue</strong></div>
-                        <div class="col-3"><strong>Wed</strong></div>
-                        <div class="col-4"><strong>Thur</strong></div>
-                        <div class="col-5"><strong>Fri</strong></div>
-                      </div>
-
-        <div class="row row-cols-auto">
-        <div class="col-1"><img src="images/cloudn.png"alt="sun"></div>
-        <div class="col-2"><img src="images/cloudl.png" alt="cloud"></div>
-        <div class="col-3"><img src="images/clouds.png" alt="rain"></div>
-        <div class="col-4"><img src="images/clwr.png" alt="clw"></div>
-        <div class="col-5"><img src="images/cloudl.png" alt="cloudy"></div>
-                      </div>
-
-                <div class="row row-cols-auto">
-                        <div class="col-1">-18°C</div>
-                        <div class="col-2">-21°C</div>
-                        <div class="col-3">-10°C</div>
-                        <div class="col-4">-17°C</div>
-                        <div class="col-5">-19°C</div>
-                      </div>
-                  </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <div class="weather-forecast" id="forecast"></div>
-                <small>
-                  <a href="https://github.com/phunkelambo/MyWeatherApp.git"
+        <small>
+          <a href="https://github.com/phunkelambo/MyWeatherApp.git"
             target="_blank"
-            >Open-source code</a
+        >Open-source code</a
           >
           by Phunke Lambo
         </small>
