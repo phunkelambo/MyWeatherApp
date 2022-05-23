@@ -17,6 +17,7 @@
     <title>MyWeatherApp</title>
 </head>
 <body>
+  
   <div class="container">
     <form id="searchForm" class="mb-3">
       <div class="row">
@@ -25,7 +26,7 @@
           type="search" 
           placeholder="Enter city here..."
           id="searchForm"
-          class="form-control shadow-sm border-1"
+          class="form-control shadow-sm border-3"
           autocomplete="off"
           autofocus="on"
           />
@@ -33,47 +34,53 @@
       <div class="col-2">
          <button 
           type="image" 
-          class="btn btn-primary w-200">
-          <img src="images/search.png">
+          class="btn btn-primary w-150">
+          <img src="images/search.png" width="30">
           </button>
         </div>
       </div>
     </form>
-        <div class="overview">   
-            <p id="date">Saturday 26 March, 2022
-            <span id="time"> | 6:42p.m.</span></p>
-            <div id="cityName">New York</div> 
+    <div class="overview">  
+      <ul>
+        <li id="cityName">New York</li>  
+        <li id="date">Saturday 26 March, 2022</li>
+        <li id="time">Last updated:<span id="time"></span> 6:42p.m.</span></li>
+        <li id="description">Cloudy</li>
+      </ul>   
         </div>
-
-      <div class="col">
-        <div class="currentTemp">
-          <span class="units" id="temperature"></span> 
-            <a href="#" id="tempC" class="active">°C</a> 
-            <a href="#" id="tempf">| °F</a>  
-        </div>
-      <div class="col">
-      <div class="currentDisplay">
-        <span id="description"></span>
-          </div>
-        </div>    
-      </div>
-      <div class="rowDetails">
-        <div class="col">
-          <img src="images/wind1.png" id="windIcon" />
-            <div id="wind"> m/h</div>
-        </div>
+        <div class="row">
           <div class="col">
-            <img src="images/humidity1.png" id="humidityIcon"/>
-            <div class="humidity"> %</div>
-          </div>
         <div class="descriptionIcon">
-          <img class="image" id="icon" src="images/clouds.png" alt="clouds" />
+          <img class="image" id="icon" src="" alt="" width="100" />
             </div>
-      </div>
-        <div class="weatherForecast" id="forecast"></div>
-            </div>
-  </div>
+          </div>
+          </div>
 
+          <div class="row allign-items-start" id="rowDetails">  
+            <div class="float-left">
+              <strong id="temperature">18</strong
+              ><span class="units"
+                ><a href="#" id="tempC" class="active">°C</a> |
+                <a href="#" id="tempf" class="active">°F</a></span
+              >
+            </div>
+          <div class="col"><img src="images/wind1.png" alt="" width="30">
+          </div>
+          <div class="col"><img src="images/humidity1.png" alt="" width="30">
+          </div>
+          </div>
+
+        <div class="row allign-items-center" id="rowdetails2"> 
+            <div class="col" id="currentTemp">
+              feels like:
+            </div>
+          <div class="col" id="wind">11<span>Km/h</span>
+            </div>
+            
+          <div class="col" id="humidity">10<span>%</span></div>
+            </div>
+          </div>
+          
         <small>
           <a href="https://github.com/phunkelambo/MyWeatherApp.git"
             target="_blank"
@@ -84,6 +91,9 @@
                         </div>
                       </div>
                     </div>
+                    </div>
+                  </div>
+              
     <script src="src/app.js"></script>
 </body>
 </html>
